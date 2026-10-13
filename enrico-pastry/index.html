@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="am" data-lang="am">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enrico Pastry — ከ1954 ጀምሮ | ፒያሳ አዲስ አበባ</title>
+<meta name="description" content="Enrico Pastry — ከ1954 ጀምሮ በፒያሳ የሚገኝ ምርጥ ጣሊያን የጣፋጭ ሱቅ።">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700;900;ital&family=Inter:wght@300;400;500;600&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<style>
+:root{
+  --espresso:#2B1810;--espresso-mid:#4A2C1A;--cream:#FAF6EF;--cream-warm:#F5EDE0;--cream-dark:#E8DCC8;
+  --terracotta:#C66B3D;--terracotta-light:#D4885E;--terracotta-dark:#A8532A;
+  --gold:#B8860B;--gold-light:#D4A73E;--rose-blush:#E8C5C5;--sage:#8B9D7E;--ink:#1A1410;
+  --paper:#FDFBF7;--paper-aged:#F7F0E3;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter','Noto Sans Ethiopic',sans-serif;background:var(--cream);color:var(--ink);overflow-x:hidden;line-height:1.65;}
+body[data-lang="am"]{font-family:'Noto Sans Ethiopic','Inter',sans-serif;}
+h1,h2,h3,h4{font-family:'Playfair Display','Noto Sans Ethiopic',serif;}
+body[data-lang="am"] h1,body[data-lang="am"] h2,body[data-lang="am"] h3,body[data-lang="am"] h4{font-family:'Noto Sans Ethiopic',serif;font-weight:700;}
+.script{font-family:'Caveat',cursive;}
+/* Bilingual handled via JS */
+
+/* === NAVBAR — editorial style, not centered === */
+.navbar{position:fixed;top:0;left:0;right:0;z-index:1000;background:var(--paper);padding:14px 0;border-bottom:1px solid var(--cream-dark);}
+.nav-container{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 32px;}
+.nav-left{display:flex;align-items:center;gap:14px;}
+.nav-seal{width:44px;height:44px;border:2px solid var(--terracotta);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;position:relative;}
+.nav-seal::after{content:'';position:absolute;inset:3px;border:1px solid var(--terracotta);border-radius:50%;opacity:0.4;}
+.nav-seal span{font-family:'Playfair Display',serif;font-weight:900;font-size:1.2rem;color:var(--terracotta);}
+.nav-brand{display:flex;flex-direction:column;line-height:1.15;}
+.nav-brand .name{font-family:'Playfair Display',serif;font-weight:900;font-size:1.1rem;color:var(--espresso);letter-spacing:0.3px;}
+.nav-brand .tag{font-size:0.62rem;color:var(--terracotta);letter-spacing:1.5px;text-transform:uppercase;font-weight:600;}
+.nav-center{display:flex;gap:32px;align-items:center;}
+.nav-center a{color:var(--espresso-mid);text-decoration:none;font-size:0.82rem;font-weight:500;position:relative;transition:color 0.2s;}
+.nav-center a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:1.5px;background:var(--terracotta);transition:width 0.3s;}
+.nav-center a:hover{color:var(--terracotta);}
+.nav-center a:hover::after{width:100%;}
+.nav-right{display:flex;align-items:center;gap:16px;}
+.lang-toggle{background:var(--cream-warm);border:1px solid var(--cream-dark);color:var(--espresso);padding:8px 18px;border-radius:24px;cursor:pointer;font-size:0.78rem;font-weight:600;display:flex;align-items:center;gap:6px;transition:all 0.2s;}
+.lang-toggle:hover{background:var(--terracotta);color:var(--paper);border-color:var(--terracotta);}
+.lang-toggle svg{width:15px;height:15px;}
+.nav-burger{display:none;flex-direction:column;gap:4px;cursor:pointer;padding:4px;background:none;border:none;}
+.nav-burger span{width:22px;height:2px;background:var(--espresso);border-radius:2px;}
+@media(max-width:900px){
+  .nav-center{display:none;position:absolute;top:100%;left:0;right:0;background:var(--paper);flex-direction:column;padding:20px 32px;gap:16px;border-bottom:1px solid var(--cream-dark);}
+  .nav-center.open{display:flex;}
+  .nav-burger{display:flex;}
+}
+
+/* === HERO — split screen, magazine cover === */
+.hero{display:grid;grid-template-columns:1fr 1fr;min-height:100vh;padding-top:72px;}
+.hero-left{background:var(--cream);padding:60px 48px 60px;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden;}
+.hero-right{background:url('https://images.pexels.com/photos/29450335/pexels-photo-29450335.jpeg?auto=compress&cs=tinysrgb&w=1200') center/cover;position:relative;}
+.hero-right::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,var(--cream) 0%,transparent 8%);}
+.hero-eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:20px;}
+.hero-eyebrow .line{width:36px;height:1.5px;background:var(--terracotta);}
+.hero-eyebrow span{font-size:0.72rem;letter-spacing:2.5px;text-transform:uppercase;color:var(--terracotta);font-weight:700;}
+.hero-title{font-size:3rem;line-height:1.12;color:var(--espresso);font-weight:900;margin-bottom:14px;}
+.hero-title .accent{font-style:italic;color:var(--terracotta);font-weight:400;}
+.hero-desc{font-size:1.02rem;color:var(--espresso-mid);max-width:440px;margin-bottom:26px;line-height:1.75;}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-bottom:36px;}
+.btn-terracotta{background:var(--terracotta);color:var(--paper);padding:13px 30px;border-radius:6px;border:none;font-size:0.9rem;font-weight:700;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:all 0.25s;}
+.btn-terracotta:hover{background:var(--terracotta-dark);transform:translateY(-2px);box-shadow:0 8px 24px rgba(198,107,61,0.25);}
+.btn-ghost{background:transparent;color:var(--espresso);padding:13px 26px;border-radius:6px;border:1.5px solid var(--cream-dark);font-size:0.9rem;font-weight:600;cursor:pointer;text-decoration:none;transition:all 0.25s;}
+.btn-ghost:hover{border-color:var(--terracotta);color:var(--terracotta);}
+.hero-meta{display:flex;gap:36px;flex-wrap:wrap;}
+.hero-meta-item{display:flex;flex-direction:column;gap:2px;}
+.hero-meta-num{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:700;color:var(--espresso);}
+.hero-meta-label{font-size:0.7rem;color:var(--espresso-mid);opacity:0.65;font-weight:500;}
+/* Steam wisps decoration */
+.hero-steam{position:absolute;bottom:20%;right:-20px;width:80px;opacity:0.08;pointer-events:none;}
+/* Cocoa dust particles */
+.cocoa-dust{position:absolute;inset:0;overflow:hidden;pointer-events:none;}
+.cocoa-dot{position:absolute;width:4px;height:4px;background:var(--terracotta);border-radius:50%;opacity:0.15;animation:cocoaFloat linear infinite;}
+@keyframes cocoaFloat{0%{transform:translateY(100%) translateX(0) rotate(0);opacity:0;}15%{opacity:0.15;}85%{opacity:0.1;}100%{transform:translateY(-30vh) translateX(40px) rotate(180deg);opacity:0;}}
+/* Vintage stamp */
+.hero-stamp{position:absolute;top:50%;right:30px;transform:translateY(-50%) rotate(-12deg);width:120px;height:120px;border:2px solid var(--terracotta);border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;opacity:0.12;pointer-events:none;}
+.hero-stamp span:first-child{font-family:'Playfair Display',serif;font-size:2rem;font-weight:900;color:var(--terracotta);}
+.hero-stamp span:last-child{font-size:0.55rem;letter-spacing:1px;color:var(--terracotta);text-transform:uppercase;margin-top:2px;}
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr;}
+  .hero-right{display:none;}
+  .hero-left{padding:80px 24px 48px;}
+  .hero-title{font-size:2.1rem;}
+  .hero-stamp{display:none;}
+}
+
+/* === MENU TICKER — vintage chalkboard scroll === */
+.menu-ticker{background:var(--espresso);padding:22px 0;overflow:hidden;position:relative;}
+.menu-ticker::before,.menu-ticker::after{content:'';position:absolute;top:0;bottom:0;width:80px;z-index:2;}
+.menu-ticker::before{left:0;background:linear-gradient(90deg,var(--espresso),transparent);}
+.menu-ticker::after{right:0;background:linear-gradient(270deg,var(--espresso),transparent);}
+.ticker-scroll{display:flex;gap:0;white-space:nowrap;animation:tickerScroll 30s linear infinite;will-change:transform;}
+@keyframes tickerScroll{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
+.ticker-item{display:inline-flex;align-items:center;gap:12px;padding:0 28px;}
+.ticker-item .dot{width:6px;height:6px;background:var(--gold-light);border-radius:50%;flex-shrink:0;}
+.ticker-item span{color:var(--cream-warm);font-size:0.9rem;font-weight:400;letter-spacing:0.5px;}
+.ticker-item .price{color:var(--gold-light);font-family:'Playfair Display',serif;font-weight:700;margin-left:8px;}
+.ticker-item .dash{color:rgba(184,134,11,0.4);margin:0 4px;}
+
+/* === WHY SECTION — alternating horizontal cards === */
+.why-section{background:var(--cream);padding:80px 32px 70px;}
+.why-container{max-width:1100px;margin:0 auto;}
+.why-header{margin-bottom:48px;text-align:left;max-width:600px;}
+.why-header .label{font-size:0.72rem;letter-spacing:2px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:10px;display:flex;align-items:center;gap:10px;}
+.why-header .label::before{content:'';width:32px;height:1.5px;background:var(--terracotta);}
+.why-header h2{font-size:2rem;color:var(--espresso);font-weight:700;margin-bottom:8px;}
+.why-header p{color:var(--espresso-mid);opacity:0.7;font-size:0.95rem;}
+.why-cards{display:flex;flex-direction:column;gap:20px;}
+.why-card{display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:start;padding:24px 28px;background:var(--paper);border-radius:10px;border:1px solid var(--cream-dark);transition:all 0.3s;}
+.why-card:hover{box-shadow:0 8px 28px rgba(43,24,16,0.08);transform:translateX(4px);}
+.why-card-badge{position:relative;width:60px;height:60px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.why-card-num{position:absolute;font-family:'Playfair Display',serif;font-size:2.5rem;font-weight:900;color:var(--terracotta);opacity:0.16;line-height:0.9;text-align:center;z-index:0;}
+.why-card-icon{position:relative;z-index:1;width:42px;height:42px;background:var(--cream-warm);border:1.5px solid var(--terracotta);border-radius:50%;display:flex;align-items:center;justify-content:center;transition:all 0.3s;}
+.why-card-icon svg{width:21px;height:21px;stroke:var(--terracotta);}
+.why-card:hover .why-card-icon{background:var(--terracotta);}
+.why-card:hover .why-card-icon svg{stroke:var(--paper);}
+.why-card-body h3{font-size:1.05rem;color:var(--espresso);margin-bottom:6px;}
+.why-card-body p{font-size:0.88rem;color:var(--espresso-mid);opacity:0.75;line-height:1.6;}
+@media(max-width:700px){
+  .why-card{grid-template-columns:auto 1fr;gap:16px;}
+  .why-card-badge{width:44px;height:44px;}
+  .why-card-num{font-size:1.8rem;}
+  .why-card-icon{width:34px;height:34px;}
+  .why-card-icon svg{width:17px;height:17px;}
+}
+
+/* === PRODUCTS — featured + mosaic === */
+.products-section{background:var(--paper-aged);padding:80px 32px 70px;position:relative;overflow:hidden;}
+.products-container{max-width:1200px;margin:0 auto;}
+.products-header{text-align:center;margin-bottom:44px;}
+.products-header .label{font-size:0.72rem;letter-spacing:2px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:10px;}
+.products-header h2{font-size:2rem;color:var(--espresso);font-weight:700;margin-bottom:8px;}
+.products-header p{color:var(--espresso-mid);opacity:0.7;font-size:0.95rem;}
+.products-grid{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:auto auto;gap:18px;}
+.product-featured{grid-row:span 2;position:relative;border-radius:14px;overflow:hidden;min-height:480px;}
+.product-featured img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;}
+.product-featured:hover img{transform:scale(1.05);}
+.product-featured .overlay{position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(43,24,16,0.85) 100%);display:flex;flex-direction:column;justify-content:flex-end;padding:28px;}
+.product-featured .overlay h3{color:var(--paper);font-size:1.6rem;margin-bottom:6px;}
+.product-featured .overlay p{color:rgba(250,246,239,0.8);font-size:0.9rem;margin-bottom:10px;}
+.product-featured .overlay .tag{display:inline-block;background:var(--terracotta);color:var(--paper);padding:5px 14px;border-radius:4px;font-size:0.72rem;font-weight:700;width:fit-content;}
+.product-tile{position:relative;border-radius:12px;overflow:hidden;min-height:230px;}
+.product-tile img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s;}
+.product-tile:hover img{transform:scale(1.05);}
+.product-tile .info{position:absolute;bottom:0;left:0;right:0;padding:16px 18px;background:linear-gradient(180deg,transparent,rgba(43,24,16,0.8));}
+.product-tile .info h4{color:var(--paper);font-size:0.98rem;margin-bottom:2px;}
+.product-tile .info p{color:rgba(250,246,239,0.7);font-size:0.76rem;}
+@media(max-width:900px){
+  .products-grid{grid-template-columns:1fr 1fr;}
+  .product-featured{grid-row:span 1;grid-column:span 2;min-height:300px;}
+}
+@media(max-width:600px){
+  .products-grid{grid-template-columns:1fr;}
+  .product-featured{grid-column:span 1;min-height:280px;}
+}
+
+/* === HERITAGE TIMELINE — vertical, alternating sides === */
+.heritage-section{background:var(--espresso);padding:80px 32px 70px;position:relative;overflow:hidden;}
+.heritage-bg-pattern{position:absolute;inset:0;opacity:0.04;pointer-events:none;background-image:repeating-linear-gradient(45deg,var(--gold-light) 0,var(--gold-light) 1px,transparent 1px,transparent 30px);}
+.heritage-container{max-width:900px;margin:0 auto;position:relative;z-index:1;}
+.heritage-header{text-align:center;margin-bottom:50px;}
+.heritage-header .label{font-size:0.72rem;letter-spacing:2px;text-transform:uppercase;color:var(--gold-light);font-weight:700;margin-bottom:10px;}
+.heritage-header h2{font-size:2rem;color:var(--cream-warm);font-weight:700;margin-bottom:8px;}
+.heritage-header p{color:rgba(245,237,224,0.6);font-size:0.95rem;}
+.timeline{position:relative;padding:0 0 0 0;}
+.timeline::before{content:'';position:absolute;left:50%;top:0;bottom:0;width:2px;background:rgba(184,134,11,0.25);transform:translateX(-50%);}
+.timeline-item{display:grid;grid-template-columns:1fr 60px 1fr;gap:0;margin-bottom:36px;align-items:center;}
+.timeline-dot{width:14px;height:14px;background:var(--gold-light);border-radius:50%;margin:0 auto;position:relative;z-index:2;box-shadow:0 0 0 4px var(--espresso);}
+.timeline-content{padding:0 20px;min-height:1px;}
+.timeline-content:empty{visibility:hidden;}
+.timeline-content h4{color:var(--gold-light);font-size:1.1rem;margin-bottom:6px;}
+.timeline-content .year{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--cream-warm);font-weight:700;margin-bottom:4px;}
+.timeline-content p{color:rgba(245,237,224,0.65);font-size:0.86rem;line-height:1.6;}
+@media(max-width:700px){
+  .timeline::before{left:11px;}
+  .timeline-item{grid-template-columns:24px 1fr;gap:16px;}
+  .timeline-dot{order:1;margin:0;}
+  .timeline-content{order:2;}
+  .timeline-content:empty{display:none;visibility:visible;}
+}
+
+/* === QUALITY — circular gauges === */
+.quality-section{background:var(--cream-warm);padding:80px 32px 70px;}
+.quality-container{max-width:1000px;margin:0 auto;}
+.quality-header{text-align:center;margin-bottom:44px;}
+.quality-header .label{font-size:0.72rem;letter-spacing:2px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:10px;}
+.quality-header h2{font-size:2rem;color:var(--espresso);font-weight:700;margin-bottom:8px;}
+.quality-header p{color:var(--espresso-mid);opacity:0.7;font-size:0.95rem;}
+.quality-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;}
+.quality-gauge{text-align:center;}
+.gauge-ring{width:130px;height:130px;margin:0 auto 14px;position:relative;}
+.gauge-ring svg{transform:rotate(-90deg);width:100%;height:100%;}
+.gauge-ring circle{fill:none;stroke-width:8;}
+.gauge-ring .track{stroke:var(--cream-dark);}
+.gauge-ring .fill{stroke:var(--terracotta);stroke-linecap:round;transition:stroke-dashoffset 1.5s ease-out;}
+.gauge-ring .pct{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:var(--espresso);}
+.quality-gauge h4{font-size:0.9rem;color:var(--espresso);font-weight:600;}
+@media(max-width:700px){.quality-grid{grid-template-columns:repeat(2,1fr);}}
+
+/* === GALLERY — mosaic === */
+.gallery-section{background:var(--cream);padding:70px 32px;}
+.gallery-container{max-width:1200px;margin:0 auto;}
+.gallery-header{text-align:center;margin-bottom:36px;}
+.gallery-header .label{font-size:0.72rem;letter-spacing:2px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:10px;}
+.gallery-header h2{font-size:1.9rem;color:var(--espresso);font-weight:700;}
+.gallery-mosaic{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:140px;grid-auto-flow:dense;gap:12px;}
+.gallery-mosaic img{width:100%;height:100%;object-fit:cover;border-radius:8px;transition:transform 0.3s;}
+.gallery-mosaic img:hover{transform:scale(1.03);}
+.g-tall{grid-row:span 2;}
+.g-wide{grid-column:span 2;}
+.g-big{grid-row:span 2;grid-column:span 2;}
+@media(max-width:700px){
+  .gallery-mosaic{grid-template-columns:repeat(2,1fr);grid-auto-rows:120px;}
+  .g-big{grid-column:span 2;}
+}
+
+/* === REVIEWS — large quote cards === */
+.reviews-section{background:var(--paper-aged);padding:70px 32px;position:relative;overflow:hidden;}
+.reviews-container{max-width:1000px;margin:0 auto;}
+.reviews-header{text-align:center;margin-bottom:36px;}
+.reviews-header .label{font-size:0.72rem;letter-spacing:2px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:10px;}
+.reviews-header h2{font-size:1.9rem;color:var(--espresso);font-weight:700;}
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.review-card{background:var(--paper);border-radius:10px;padding:28px 24px;position:relative;border-top:3px solid var(--terracotta);}
+.review-card .quote-mark{position:absolute;top:12px;right:18px;font-family:'Playfair Display',serif;font-size:3rem;color:var(--terracotta);opacity:0.15;line-height:1;}
+.review-card .stars{color:var(--gold);font-size:0.9rem;margin-bottom:12px;letter-spacing:2px;}
+.review-card .text{font-size:0.88rem;color:var(--espresso-mid);line-height:1.7;margin-bottom:14px;font-style:italic;}
+.review-card .author{display:flex;align-items:center;gap:10px;}
+.review-card .author .avatar{width:36px;height:36px;border-radius:50%;background:var(--terracotta);color:var(--paper);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.8rem;}
+.review-card .author .name{font-size:0.82rem;font-weight:600;color:var(--espresso);}
+.review-card .author .source{font-size:0.72rem;color:var(--espresso-mid);opacity:0.6;}
+@media(max-width:800px){.reviews-grid{grid-template-columns:1fr;}}
+
+/* === CONTACT — split with map === */
+.contact-section{background:var(--espresso);color:var(--cream-warm);padding:0;}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;min-height:420px;}
+.contact-info{padding:60px 48px;display:flex;flex-direction:column;justify-content:center;}
+.contact-info .label{font-size:0.72rem;letter-spacing:2px;text-transform:uppercase;color:var(--gold-light);font-weight:700;margin-bottom:12px;}
+.contact-info h2{font-size:2rem;color:var(--cream-warm);margin-bottom:20px;font-weight:700;}
+.contact-detail{display:flex;align-items:flex-start;gap:14px;margin-bottom:18px;}
+.contact-detail svg{width:20px;height:20px;color:var(--gold-light);flex-shrink:0;margin-top:3px;}
+.contact-detail .info{display:flex;flex-direction:column;}
+.contact-detail .info .label-sm{font-size:0.7rem;color:rgba(245,237,224,0.5);text-transform:uppercase;letter-spacing:1px;margin-bottom:2px;}
+.contact-detail .info .value{font-size:0.95rem;color:var(--cream-warm);}
+.contact-map{background:url('https://maps.google.com/maps?q=Piassa+Addis+Ababa&t=&z=15&ie=UTF8&iwloc=&output=embed') center/cover;position:relative;}
+.contact-map iframe{width:100%;height:100%;border:none;filter:sepia(0.2) hue-rotate(-10deg);}
+@media(max-width:800px){
+  .contact-grid{grid-template-columns:1fr;}
+  .contact-info{padding:48px 24px;}
+  .contact-map{min-height:280px;}
+}
+
+/* === FOOTER — two column mobile === */
+.footer{background:var(--ink);color:rgba(245,237,224,0.5);padding:48px 32px 24px;}
+.footer-container{max-width:1100px;margin:0 auto;}
+.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr;gap:32px;margin-bottom:32px;}
+.footer-brand h3{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--cream-warm);margin-bottom:8px;}
+.footer-brand p{font-size:0.82rem;line-height:1.6;max-width:320px;}
+.footer-col h4{font-size:0.72rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold-light);margin-bottom:12px;font-weight:600;}
+.footer-col a{display:block;font-size:0.82rem;color:rgba(245,237,224,0.5);text-decoration:none;margin-bottom:8px;transition:color 0.2s;}
+.footer-col a:hover{color:var(--gold-light);}
+.footer-social{display:flex;gap:12px;margin-top:12px;}
+.footer-social a{width:36px;height:36px;border:1px solid rgba(245,237,224,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;transition:all 0.2s;}
+.footer-social a:hover{border-color:var(--gold-light);background:rgba(184,134,11,0.1);}
+.footer-social svg{width:16px;height:16px;color:var(--gold-light);}
+.footer-bottom{border-top:1px solid rgba(245,237,224,0.08);padding-top:20px;display:flex;justify-content:space-between;align-items:center;font-size:0.76rem;}
+@media(max-width:700px){
+  .footer-top{grid-template-columns:1fr 1fr;}
+  .footer-brand{grid-column:span 2;margin-bottom:8px;}
+  .footer-bottom{flex-direction:column;gap:8px;text-align:center;}
+}
+
+/* Doily/lace decoration */
+.doily-deco{position:absolute;width:200px;height:200px;opacity:0.04;pointer-events:none;}
+.doily-deco svg{width:100%;height:100%;}
+</style>
+</head>
+<body data-lang="am">
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="nav-left">
+      <div class="nav-seal"><span>E</span></div>
+      <div class="nav-brand">
+        <span class="name">Enrico Pastry</span>
+        <span class="sub" data-en="Since 1954" data-am="ከ1954 ጀምሮ">ከ1954 ጀምሮ</span>
+      </div>
+    </div>
+    <div class="nav-center" id="navLinks">
+      <a href="#hero" data-en="Home" data-am="መነሻ">መነሻ</a>
+      <a href="#products" data-en="Pastries" data-am="ጣፋጮች">ጣፋጮች</a>
+      <a href="#heritage" data-en="Heritage" data-am="ታሪካችን">ታሪካችን</a>
+      <a href="#gallery" data-en="Gallery" data-am="ምስሎች">ምስሎች</a>
+      <a href="#contact" data-en="Visit Us" data-am="ያግኙን">ያግኙን</a>
+    </div>
+    <div class="nav-right">
+      <button class="lang-toggle" onclick="toggleLang()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 010 20M12 2a15 15 0 000 20"/></svg>
+        <span id="langLabel">አማ</span>
+      </button>
+      <button class="nav-burger" onclick="document.getElementById('navLinks').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO — split screen -->
+<section class="hero" id="hero">
+  <div class="hero-left">
+    <div class="cocoa-dust" id="cocoaDust"></div>
+    <div class="hero-eyebrow">
+      <div class="line"></div>
+      <span data-en="Piassa · Addis Ababa" data-am="ፒያሳ · አዲስ አበባ">ፒያሳ · አዲስ አበባ</span>
+    </div>
+    <h1 class="hero-title" data-am="የጣሊያን ጣፋጭ ቅርስ አዲስ አበባ" data-en="Italian Pastry Heritage, Addis Ababa">የጣሊያን ጣፋጭ ቅርስ አዲስ አበባ</h1>
+    <p class="hero-desc" data-am="ለሰባት አሥርት ዓመታት በፒያሳ ልብ የምትገኝ ምርጥ የጣሊያን ጣፋጭ ሱቅ። ሚል-ፉይ፣ ኬኮች፣ ማካሮን እና ጊዜ በማይሽረው ባህል የተሰራ ቡና።" data-en="For seven decades in the heart of Piassa, the finest Italian pastry shop. Mille-feuille, cakes, macarons, and coffee crafted with timeless tradition.">ለሰባት አሥርት ዓመታት በፒያሳ ልብ የምትገኝ ምርጥ የጣሊያን ጣፋጭ ሱቅ። ሚል-ፉይ፣ ኬኮች፣ ማካሮን እና ጊዜ በማይሽረው ባህል የተሰራ ቡና።</p>
+    <div class="hero-actions">
+      <a href="#products" class="btn-terracotta">
+        <span data-en="Explore Pastries" data-am="ጣፋጮቹን ይዩ">ጣፋጮቹን ይዩ</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#contact" class="btn-ghost" data-en="Visit Us" data-am="ያግኙን">ያግኙን</a>
+    </div>
+    <div class="hero-meta">
+      <div class="hero-meta-item"><span class="hero-meta-num">70+</span><span class="hero-meta-label" data-en="Years of Heritage" data-am="ዓመት ታሪክ">ዓመት ታሪክ</span></div>
+      <div class="hero-meta-item"><span class="hero-meta-num">4.3★</span><span class="hero-meta-label" data-en="400+ Reviews" data-am="400+ ግምጋሎች">400+ ግምጋሎች</span></div>
+      <div class="hero-meta-item"><span class="hero-meta-num">10K+</span><span class="hero-meta-label" data-en="Followers" data-am="ተከታዮች">ተከታዮች</span></div>
+    </div>
+    <div class="hero-stamp"><span>EP</span><span data-en="Est. 1954" data-am="ከ1954">Est. 1954</span></div>
+  </div>
+  <div class="hero-right"></div>
+</section>
+
+<!-- MENU TICKER — vintage scrolling menu -->
+<div class="menu-ticker">
+  <div class="ticker-scroll" id="tickerScroll">
+    <div class="ticker-item"><div class="dot"></div><span data-en="Mille-feuille" data-am="ሚል-ፉይ">ሚል-ፉይ</span><span class="dash">—</span><span class="price">¥45</span></div>
+    <div class="ticker-item"><div class="dot"></div><span data-en="Fresh Croissants" data-am="ትኩስ ክሮሰንት">ትኩስ ክሮሰንት</span><span class="dash">—</span><span class="price">¥25</span></div>
+    <div class="ticker-item"><div class="dot"></div><span data-en="Custom Cakes" data-am="ብጁ ኬኮች">ብጁ ኬኮች</span><span class="dash">—</span><span class="price">¥200+</span></div>
+    <div class="ticker-item"><div class="dot"></div><span data-en="Macarons" data-am="ማካሮን">ማካሮን</span><span class="dash">—</span><span class="price">¥15</span></div>
+    <div class="ticker-item"><div class="dot"></div><span data-en="Espresso" data-am="ኤስፕሬሶ">ኤስፕሬሶ</span><span class="dash">—</span><span class="price">¥20</span></div>
+    <div class="ticker-item"><div class="dot"></div><span data-en="Assorted Pastries" data-am="የተለያዩ ጣፋጮች">የተለያዩ ጣፋጮች</span><span class="dash">—</span><span class="price">¥35</span></div>
+    <div class="ticker-item"><div class="dot"></div><span data-en="Wedding Cakes" data-am="የሰርግ ኬክ">የሰርግ ኬክ</span><span class="dash">—</span><span class="price">¥500+</span></div>
+    <!-- duplicate for seamless loop -->
+    <div class="ticker-item"><div class="dot"></div><span data-en="Mille-feuille" data-am="ሚል-ፉይ">ሚል-ፉይ</span><span class="dash">—</span><span class="price">¥45</span></div>
+    <div class="ticker-item"><div class="dot"></div><span data-en="Fresh Croissants" data-am="ትኩስ ክሮሰንት">ትኩስ ክሮሰንት</span><span class="dash">—</span><span class="price">¥25</span></div>
+    <div class="ticker-item"><div class="dot"></div><span data-en="Custom Cakes" data-am="ብጁ ኬኮች">ብጁ ኬኮች</span><span class="dash">—</span><span class="price">¥200+</span></div>
+    <div class="ticker-item"><div class="dot"></div><span data-en="Macarons" data-am="ማካሮን">ማካሮን</span><span class="dash">—</span><span class="price">¥15</span></div>
+    <div class="ticker-item"><div class="dot"></div><span data-en="Espresso" data-am="ኤስፕሬሶ">ኤስፕሬሶ</span><span class="dash">—</span><span class="price">¥20</span></div>
+    <div class="ticker-item"><div class="dot"></div><span data-en="Assorted Pastries" data-am="የተለያዩ ጣፋጮች">የተለያዩ ጣፋጮች</span><span class="dash">—</span><span class="price">¥35</span></div>
+    <div class="ticker-item"><div class="dot"></div><span data-en="Wedding Cakes" data-am="የሰርግ ኬክ">የሰርግ ኬክ</span><span class="dash">—</span><span class="price">¥500+</span></div>
+  </div>
+</div>
+
+<!-- WHY SECTION — numbered horizontal cards -->
+<section class="why-section" id="why">
+  <div class="why-container">
+    <div class="why-header" data-aos="fade-right">
+      <div class="label" data-en="Why Enrico?" data-am="ለምን ኤንሪኮ?">ለምን ኤንሪኮ?</div>
+      <h2 data-am="የሰባት አሥርት ዓመት ጣፋጭ ቅርስ" data-en="Seven Decades of Sweet Heritage">የሰባት አሥርት ዓመት ጣፋጭ ቅርስ</h2>
+      <p data-am="ከ1954 ጀምሮ በፒያሳ ልብ የተሰራ፣ በባህላዊ ጣሊያን የጣፋጭ አሰራር ላይ የተመሠረተ።" data-en="Built in the heart of Piassa since 1954, rooted in traditional Italian pastry craft.">ከ1954 ጀምሮ በፒያሳ ልብ የተሰራ፣ በባህላዊ ጣሊያን የጣፋጭ አሰራር ላይ የተመሠረተ።</p>
+    </div>
+    <div class="why-cards">
+      <div class="why-card" data-aos="fade-right">
+        <div class="why-card-badge">
+          <span class="why-card-num">01</span>
+          <span class="why-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3c0 3-3 3-3 6s3 3 3 6-3 3-3 6"/><path d="M15 3c0 3 3 3 3 6s-3 3-3 6 3 3 3 6"/><path d="M4 21h16"/></svg></span>
+        </div>
+        <div class="why-card-body">
+          <h3 data-am="ባህላዊ ጣሊያን አሰራር" data-en="Traditional Italian Recipes">ባህላዊ ጣሊያን አሰራር</h3>
+          <p data-am="ከ1954 ጀምሮ በጣሊያናዊው መስራች ኤንሪኮ ኢንግሌዝ የተላለፉ ዘመናትን ያለፉ አሰራሮች።" data-en="Time-honored recipes passed down from founder Enrico Inglese since 1954.">ከ1954 ጀምሮ በጣሊያናዊው መስራች ኤንሪኮ ኢንግሌዝ የተላለፉ ዘመናትን ያለፉ አሰራሮች።</p>
+        </div>
+      </div>
+      <div class="why-card" data-aos="fade-right">
+        <div class="why-card-badge">
+          <span class="why-card-num">02</span>
+          <span class="why-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></span>
+        </div>
+        <div class="why-card-body">
+          <h3 data-am="በቀን ሁለት ጊዜ ትኩስ" data-en="Fresh Twice Daily">በቀን ሁለት ጊዜ ትኩስ</h3>
+          <p data-am="ትኩስ ኬኮች በጠዋት 10 እና ከሰዓት 3 ብቻ ይቀርባሉ — ደንበኞች ለዚህ ሰልፍ ይይዛሉ።" data-en="Fresh batches arrive only twice a day — 10am and 3pm — and customers queue for it.">ትኩስ ኬኮች በጠዋት 10 እና ከሰዓት 3 ብቻ ይቀርባሉ — ደንበኞች ለዚህ ሰልፍ ይይዛሉ።</p>
+        </div>
+      </div>
+      <div class="why-card" data-aos="fade-right">
+        <div class="why-card-badge">
+          <span class="why-card-num">03</span>
+          <span class="why-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 11c0-3-2.5-6-5-6s-5 3-5 6"/><path d="M4 11h16l-1.5 8a2 2 0 0 1-2 2h-9a2 2 0 0 1-2-2Z"/><path d="M9 15h6"/></svg></span>
+        </div>
+        <div class="why-card-body">
+          <h3 data-am="ያልተቀየረ ቅርስ" data-en="An Unchanged Legacy">ያልተቀየረ ቅርስ</h3>
+          <p data-am="ሁለቱም መስራቾች ካለፉ በኋላ የቆየ ሰራተኞች ቅርሱን ተረከቡ፣ ዲኮርና አሰራር ሳይቀየር ጠብቀዋል።" data-en="After both founders passed, loyal staff carried the legacy forward, preserving the original decor and recipes unchanged.">ሁለቱም መስራቾች ካለፉ በኋላ የቆየ ሰራተኞች ቅርሱን ተረከቡ፣ ዲኮርና አሰራር ሳይቀየር ጠብቀዋል።</p>
+        </div>
+      </div>
+      <div class="why-card" data-aos="fade-right">
+        <div class="why-card-badge">
+          <span class="why-card-num">04</span>
+          <span class="why-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h13v5a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5Z"/><path d="M16 9h2a2 2 0 0 1 0 4h-2"/><path d="M7 3v2M11 3v2"/></svg></span>
+        </div>
+        <div class="why-card-body">
+          <h3 data-am="የቡና ጤዛ አጋር" data-en="Coffee Bar Companion">የቡና ጤዛ አጋር</h3>
+          <p data-am="ምርጥ የኤስፕሬሶ እና የቡና አገልግሎት ከጣፋጮቻችን ጋር።" data-en="Premium espresso and coffee served alongside our pastries.">ምርጥ የኤስፕሬሶ እና የቡና አገልግሎት ከጣፋጮቻችን ጋር።</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS — featured + mosaic -->
+<section class="products-section" id="products">
+  <div class="products-container">
+    <div class="products-header" data-aos="fade-up">
+      <div class="label" data-en="Our Pastries" data-am="ጣፋጮቻችን">ጣፋጮቻችን</div>
+      <h2 data-am="የጣፋጭ ምርጫዎች" data-en="Sweet Selections">የጣፋጭ ምርጫዎች</h2>
+      <p data-am="ከባህላዊ ጣሊያን ምግቦች እስከ ብጁ ኬኮች ድረስ" data-en="From classic Italian pastries to custom cakes">ከባህላዊ ጣሊያን ምግቦች እስከ ብጁ ኬኮች ድረስ</p>
+    </div>
+    <div class="products-grid" data-aos="fade-up">
+      <div class="product-featured">
+        <img src="https://images.pexels.com/photos/15306934/pexels-photo-15306934.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Mille-feuille">
+        <div class="overlay">
+          <span class="tag" data-en="Signature" data-am="ፊርማ">ፊርማ</span>
+          <h3 data-am="ሚል-ፉይ" data-en="Mille-feuille">ሚል-ፉይ</h3>
+          <p data-am="የተከለለ የፓስትሪ ስነጥበብ በክሬም መሀከል፣ የተፈጥሮ ሻይ ጣዕም።" data-en="Layered pastry art with cream filling and natural vanilla flavor.">የተከለለ የፓስትሪ ስነጥበብ በክሬም መሀከል፣ የተፈጥሮ ሻይ ጣዕም።</p>
+        </div>
+      </div>
+      <div class="product-tile">
+        <img src="https://images.pexels.com/photos/33335365/pexels-photo-33335365.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Fruit tarts">
+        <div class="info"><h4 data-am="ትርት" data-en="Fruit Tarts">ትርት</h4><p data-am="ትኩስ ፍራፍሬ ያላቸው የክሬም ትርት" data-en="Delicate tarts topped with fresh fruit">Delicate tarts topped with fresh fruit</p></div>
+      </div>
+      <div class="product-tile">
+        <img src="https://images.pexels.com/photos/31269834/pexels-photo-31269834.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Macchiato">
+        <div class="info"><h4 data-am="ማኪያቶ" data-en="Macchiato">ማኪያቶ</h4><p data-am="ምርጥ የቡና ጤዛ" data-en="Premium coffee bar">Premium coffee bar</p></div>
+      </div>
+      <div class="product-tile">
+        <img src="https://images.pexels.com/photos/32916204/pexels-photo-32916204.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Mini cakes">
+        <div class="info"><h4 data-am="ትንሽ ኬኮች" data-en="Mini Cakes">ትንሽ ኬኮች</h4><p data-am="በለስላሳ ውብ ቅርፆች የተዘጋጁ" data-en="Soft cakes in adorable shapes">Soft cakes in adorable shapes</p></div>
+      </div>
+      <div class="product-tile">
+        <img src="https://images.pexels.com/photos/11287582/pexels-photo-11287582.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Chocolate mousse">
+        <div class="info"><h4 data-am="የቾኮላት ሙዝ" data-en="Chocolate Mousse">የቾኮላት ሙዝ</h4><p data-am="ለስላሳ የቾኮላት ጣፋጭ" data-en="Rich, silky chocolate dessert">Rich, silky chocolate dessert</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HERITAGE TIMELINE — vertical, alternating -->
+<section class="heritage-section" id="heritage">
+  <div class="heritage-bg-pattern"></div>
+  <div class="heritage-container">
+    <div class="heritage-header" data-aos="fade-up">
+      <div class="label" data-en="Our Story" data-am="ታሪካችን">ታሪካችን</div>
+      <h2 data-am="የኤንሪኮ ጉዞ" data-en="The Enrico Journey">የኤንሪኮ ጉዞ</h2>
+      <p data-am="ከ1954 ጀምሮ እስካሁን ድረስ" data-en="From 1954 to today">ከ1954 ጀምሮ እስካሁን ድረስ</p>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-content">
+          <div class="year">1954</div>
+          <h4 data-am="ተጀመረ" data-en="The Beginning">ተጀመረ</h4>
+          <p data-am="ጣሊያናዊው ስደተኛ ኤንሪኮ ኢንግሌዝ በፒያሳ ልብ ውስጥ ሱቁን ከፈተ፣ ወደ አዲስ አበባ የጣሊያን ጣፋጭ ጥበብ አመጣ።" data-en="Italian immigrant Enrico Inglese opened the doors in the heart of Piassa, bringing Italian pastry craft to Addis Ababa.">ጣሊያናዊው ስደተኛ ኤንሪኮ ኢንግሌዝ በፒያሳ ልብ ውስጥ ሱቁን ከፈተ፣ ወደ አዲስ አበባ የጣሊያን ጣፋጭ ጥበብ አመጣ።</p>
+        </div>
+        <div class="timeline-dot"></div>
+        <div class="timeline-content"></div>
+      </div>
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-content"></div>
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="year" data-am="የፒያሳ ተቋም" data-en="A Piazza Institution">የፒያሳ ተቋም</div>
+          <h4 data-am="የዕለት ተዕለት ልማድ" data-en="A Daily Ritual">የዕለት ተዕለት ልማድ</h4>
+          <p data-am="ትኩስ ኬኮች በቀን ሁለት ጊዜ ብቻ ይቀርባሉ — ጠዋት 10 እና ከሰዓት 3 ላይ፣ ደንበኞች ረዥም ሰልፍ ይይዛሉ።" data-en="Fresh batches arrive just twice a day — 10am and 3pm — with loyal customers lining up each time.">ትኩስ ኬኮች በቀን ሁለት ጊዜ ብቻ ይቀርባሉ — ጠዋት 10 እና ከሰዓት 3 ላይ፣ ደንበኞች ረዥም ሰልፍ ይይዛሉ።</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-content">
+          <div class="year" data-am="ትውልድ ተቀበለ" data-en="Carried Forward">ትውልድ ተቀበለ</div>
+          <h4 data-am="ቅርሱ ቀጠለ" data-en="A Legacy Preserved">ቅርሱ ቀጠለ</h4>
+          <p data-am="ሁለቱም መስራቾች ካለፉ በኋላ፣ የቆየ ሰራተኞች ቅርሱን ተረከቡ፣ የመጀመሪያውን ውስጣዊ ገጽታና የምግብ አሰራር ሳይቀየር ጠብቀዋል።" data-en="After both founders passed away, longtime staff carried the legacy forward — preserving the original decor and recipes exactly as they were.">ሁለቱም መስራቾች ካለፉ በኋላ፣ የቆየ ሰራተኞች ቅርሱን ተረከቡ፣ የመጀመሪያውን ውስጣዊ ገጽታና የምግብ አሰራር ሳይቀየር ጠብቀዋል።</p>
+        </div>
+        <div class="timeline-dot"></div>
+        <div class="timeline-content"></div>
+      </div>
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-content"></div>
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="year">Today</div>
+          <h4 data-am="ዛሬ" data-en="Today">ዛሬ</h4>
+          <p data-am="ከ70 ዓመታት በላይ በኋላ አሁንም ከምርጥ የፒያሳ ጣፋጭ ሱቆች አንዱ ሆኖ ይቆያል፣ በ CGTN Africa ተዘግቧል፣ በ4.6★ ደረጃ ተመስክሮለታል።" data-en="Over 70 years on, it remains one of Piassa's most beloved pastry houses — featured on CGTN Africa and rated 4.6★ by generations of loyal customers.">ከ70 ዓመታት በላይ በኋላ አሁንም ከምርጥ የፒያሳ ጣፋጭ ሱቆች አንዱ ሆኖ ይቆያል፣ በ CGTN Africa ተዘግቧል፣ በ4.6★ ደረጃ ተመስክሮለታል።</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUALITY — circular gauges -->
+<section class="quality-section" id="quality">
+  <div class="quality-container">
+    <div class="quality-header" data-aos="fade-up">
+      <div class="label" data-en="Our Standards" data-am="የጥራት መስፈርቶቻችን">የጥራት መስፈርቶቻችን</div>
+      <h2 data-am="ለሰባት አሥርት ዓመታት ያልተናወጠ ጥራት" data-en="Unwavering Quality for Seven Decades">ለሰባት አሥርት ዓመታት ያልተናወጠ ጥራት</h2>
+      <p data-am="በየቀኑ ምርጥ ጣፋጮችን ለማቅረብ ቁርጠኞች ነን" data-en="Committed to serving the finest pastries every single day">በየቀኑ ምርጥ ጣፋጮችን ለማቅረብ ቁርጠኞች ነን</p>
+    </div>
+    <div class="quality-grid" data-aos="fade-up">
+      <div class="quality-gauge">
+        <div class="gauge-ring"><svg viewBox="0 0 120 120"><circle class="track" cx="60" cy="60" r="52"/><circle class="fill" cx="60" cy="60" r="52" stroke-dasharray="327" stroke-dashoffset="327" data-pct="98"/></svg><span class="pct" data-val="98">98%</span></div>
+        <h4 data-am="ትኩስነት" data-en="Freshness">ትኩስነት</h4>
+      </div>
+      <div class="quality-gauge">
+        <div class="gauge-ring"><svg viewBox="0 0 120 120"><circle class="track" cx="60" cy="60" r="52"/><circle class="fill" cx="60" cy="60" r="52" stroke-dasharray="327" stroke-dashoffset="327" data-pct="97"/></svg><span class="pct" data-val="97">97%</span></div>
+        <h4 data-am="እውነተኝነት" data-en="Authenticity">እውነተኝነት</h4>
+      </div>
+      <div class="quality-gauge">
+        <div class="gauge-ring"><svg viewBox="0 0 120 120"><circle class="track" cx="60" cy="60" r="52"/><circle class="fill" cx="60" cy="60" r="52" stroke-dasharray="327" stroke-dashoffset="327" data-pct="96"/></svg><span class="pct" data-val="96">96%</span></div>
+        <h4 data-am="የጥበብ ጥራት" data-en="Craftsmanship">የጥበብ ጥራት</h4>
+      </div>
+      <div class="quality-gauge">
+        <div class="gauge-ring"><svg viewBox="0 0 120 120"><circle class="track" cx="60" cy="60" r="52"/><circle class="fill" cx="60" cy="60" r="52" stroke-dasharray="327" stroke-dashoffset="327" data-pct="99"/></svg><span class="pct" data-val="99">99%</span></div>
+        <h4 data-am="የደንበኛ ፍቅር" data-en="Customer Love">የደንበኛ ፍቅር</h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY — mosaic -->
+<section class="gallery-section" id="gallery">
+  <div class="gallery-container">
+    <div class="gallery-header" data-aos="fade-up">
+      <div class="label" data-en="Gallery" data-am="ምስሎች">ምስሎች</div>
+      <h2 data-am="የሱቃችን ዓለም" data-en="A Glimpse Inside">የሱቃችን ዓለም</h2>
+    </div>
+    <div class="gallery-mosaic" data-aos="fade-up">
+      <img class="g-big" src="https://images.pexels.com/photos/5964530/pexels-photo-5964530.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Pastry chef shaping dough">
+      <img class="g-tall" src="https://images.pexels.com/photos/33335365/pexels-photo-33335365.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Fruit tarts on display">
+      <img src="https://images.pexels.com/photos/32916204/pexels-photo-32916204.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Mini cakes">
+      <img class="g-wide" src="https://images.pexels.com/photos/31269834/pexels-photo-31269834.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Macchiato coffee">
+      <img src="https://images.pexels.com/photos/11287582/pexels-photo-11287582.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Chocolate mousse">
+      <img class="g-tall" src="https://images.pexels.com/photos/29450335/pexels-photo-29450335.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Bakery display case">
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS — large quote cards -->
+<section class="reviews-section" id="reviews">
+  <div class="reviews-container">
+    <div class="reviews-header" data-aos="fade-up">
+      <div class="label" data-en="What Customers Say" data-am="የደንበኞች ምስክርነት">የደንበኞች ምስክርነት</div>
+      <h2 data-am="እውነተኛ ግምጋሎች" data-en="Real Reviews">እውነተኛ ግምጋሎች</h2>
+    </div>
+    <div class="reviews-grid" data-aos="fade-up">
+      <div class="review-card">
+        <div class="quote-mark">"</div>
+        <div class="stars">★★★★★</div>
+        <p class="text" data-am="ለዘመናት በፒያሳ ምርጥ ጣፋጮችን አቅርቧል። ሚል-ፉይ አሁንም በጣም ጣፍጭ ነው።" data-en="The best pastries in Piassa for generations. The mille-feuille is still incredible.">ለዘመናት በፒያሳ ምርጥ ጣፋጮችን አቅርቧል። ሚል-ፉይ አሁንም በጣም ጣፍጭ ነው።</p>
+        <div class="author"><div class="avatar">M</div><div><div class="name" data-en="Maria T." data-am="ማሪያ ተ.">ማሪያ ተ.</div><div class="source">Google Review</div></div></div>
+      </div>
+      <div class="review-card">
+        <div class="quote-mark">"</div>
+        <div class="stars">★★★★★</div>
+        <p class="text" data-am="ለልደት የሰሩልን ኬክ በጣም ውብ ነበር። ጣዕም እና ዲዛይን በእጅ ይዟል።" data-en="The birthday cake they made was stunning. Perfect taste and design.">ለልደት የሰሩልን ኬክ በጣም ውብ ነበር። ጣዕም እና ዲዛይን በእጅ ይዟል።</p>
+        <div class="author"><div class="avatar">D</div><div><div class="name" data-en="Dawit A." data-am="ዳዊት አ.">ዳዊት አ.</div><div class="source">Google Review</div></div></div>
+      </div>
+      <div class="review-card">
+        <div class="quote-mark">"</div>
+        <div class="stars">★★★★★</div>
+        <p class="text" data-am="ከልጅነት እስከ አሁን በፒያሳ ምርጥ ጣፋጮች እየተቀበልኩ ነው። ትውልድ ይሽራል።" data-en="From childhood to now, always the best pastries in Piassa. A generational treasure.">ከልጅነት እስከ አሁን በፒያሳ ምርጥ ጣፋጮች እየተቀበልኩ ነው። ትውልድ ይሽራል።</p>
+        <div class="author"><div class="avatar">S</div><div><div class="name" data-en="Sara G." data-am="ሳራ ገ.">ሳራ ገ.</div><div class="source">Facebook Review</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT — split with map -->
+<section class="contact-section" id="contact">
+  <div class="contact-grid">
+    <div class="contact-info" data-aos="fade-right">
+      <div class="label" data-en="Visit Us" data-am="ያግኙን">ያግኙን</div>
+      <h2 data-am="በፒያሳ ልብ ይገኛሉ" data-en="In the Heart of Piassa">በፒያሳ ልብ ይገኛሉ</h2>
+      <div class="contact-detail">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <div class="info"><span class="label-sm" data-en="Address" data-am="አድራሻ">አድራሻ</span><span class="value" data-en="Piassa, Addis Ababa, Ethiopia" data-am="ፒያሳ፣ አዲስ አበባ፣ ኢትዮጵያ">ፒያሳ፣ አዲስ አበባ፣ ኢትዮጵያ</span></div>
+      </div>
+      <div class="contact-detail">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>
+        <div class="info"><span class="label-sm" data-en="Phone" data-am="ስልክ">ስልክ</span><span class="value">+251 11 111 2864</span></div>
+      </div>
+      <div class="contact-detail">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        <div class="info"><span class="label-sm" data-en="Hours" data-am="ሰዓታት">ሰዓታት</span><span class="value"><span data-en="Mon–Sat: 7:00–21:00" data-am="ሰኞ–ቅዳሜ፡ 7:00–21:00">ሰኞ–ቅዳሜ፡ 7:00–21:00</span><br><span data-en="Sunday: 8:00–20:00" data-am="እሁድ፡ 8:00–20:00">እሁድ፡ 8:00–20:00</span></span></div>
+      </div>
+    </div>
+    <div class="contact-map">
+      <iframe src="https://maps.google.com/maps?q=Piassa+Addis+Ababa&z=15&output=embed" loading="lazy" title="Enrico Pastry Location"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <h3>Enrico Pastry</h3>
+        <p data-en="Italian pastry heritage in the heart of Piassa since 1954." data-am="ከ1954 ጀምሮ በፒያሳ ልብ የሚገኝ የጣሊያን ጣፋጭ ቅርስ።">ከ1954 ጀምሮ በፒያሳ ልብ የሚገኝ የጣሊያን ጣፋጭ ቅርስ።</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4 data-en="Explore" data-am="ጉብኝት">ጉብኝት</h4>
+        <a href="#hero" data-en="Home" data-am="መነሻ">መነሻ</a>
+        <a href="#products" data-en="Pastries" data-am="ጣፋጮች">ጣፋጮች</a>
+        <a href="#heritage" data-en="Heritage" data-am="ታሪካችን">ታሪካችን</a>
+        <a href="#gallery" data-en="Gallery" data-am="ምስሎች">ምስሎች</a>
+      </div>
+      <div class="footer-col">
+        <h4 data-en="Contact" data-am="አድራሻ">አድራሻ</h4>
+        <a>+251 11 111 2864</a>
+        <a>Piassa, Addis Ababa</a>
+        <a href="#" data-en="Open in Maps" data-am="በካርታ ይክፈቱ">በካርታ ይክፈቱ</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 Enrico Pastry. <span data-en="All rights reserved." data-am="መብቱ በህግ የተጠበቀ።">መብቱ በህግ የተጠበቀ።</span></span>
+      <span class="script" style="color:var(--terracotta-light);font-size:0.85rem;">Enrico Pastry · Piassa</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Language toggle — updates ALL elements with data-en/data-am
+function applyLang(lang){
+  document.body.setAttribute('data-lang',lang);
+  document.documentElement.setAttribute('lang',lang);
+  document.getElementById('langLabel').textContent=lang==='am'?'አማ':'EN';
+  document.querySelectorAll('[data-am]').forEach(function(el){
+    var text=lang==='en'?(el.getAttribute('data-en')||el.textContent):el.getAttribute('data-am');
+    if(text)el.textContent=text;
+  });
+}
+function toggleLang(){
+  var current=document.body.getAttribute('data-lang');
+  applyLang(current==='am'?'en':'am');
+}
+
+// Cocoa dust particles
+(function(){
+  var container=document.getElementById('cocoaDust');
+  if(!container)return;
+  for(var i=0;i<20;i++){
+    var dot=document.createElement('div');
+    dot.className='cocoa-dot';
+    dot.style.left=Math.random()*100+'%';
+    dot.style.animationDuration=(8+Math.random()*8)+'s';
+    dot.style.animationDelay=Math.random()*8+'s';
+    dot.style.width=dot.style.height=(2+Math.random()*4)+'px';
+    container.appendChild(dot);
+  }
+})();
+
+// Quality gauge animation
+var gaugeObserver=new IntersectionObserver(function(entries){
+  entries.forEach(function(entry){
+    if(entry.isIntersecting){
+      entry.target.querySelectorAll('.gauge-ring .fill').forEach(function(circle){
+        var pct=parseInt(circle.getAttribute('data-pct'));
+        var circumference=327;
+        var offset=circumference-(circumference*pct/100);
+        circle.style.strokeDashoffset=offset;
+      });
+      gaugeObserver.unobserve(entry.target);
+    }
+  });
+},{threshold:0.3});
+document.querySelectorAll('.quality-grid').forEach(function(el){gaugeObserver.observe(el);});
+
+// Initialize Amharic (default)
+if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',function(){applyLang('am');});}else{applyLang('am');}
+</script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({duration:800,once:true,offset:80,easing:'ease-out-cubic'});
+</script>
+</body>
+</html>
